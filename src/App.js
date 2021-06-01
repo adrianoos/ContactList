@@ -8,10 +8,10 @@ function App() {
   const [ users, setUsers ] = useState([])
 
   const getData = () => {
-    $.getJSON('https://teacode-recruitment-challenge.s3.eu-central-1.amazonaws.com/users.json', (data) =>
-      (setUsers(data))
-  )
-  }
+    $.getJSON('https://teacode-recruitment-challenge.s3.eu-central-1.amazonaws.com/users.json',
+    (data) => (setUsers(data)))
+  };
+
 
   useEffect(() => {
     getData()

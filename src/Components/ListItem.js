@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ListItem = () => {
+const ListItem = ({ avatar, firstName, lastName }) => {
     return (
         <div id='ListItem'>
-            <img src="https://robohash.org/fugiatautemodit.png?size=50x50&set=set1" alt="Avatar"></img>
-          <p>First Name</p>
-          <p>Last Name</p>
+            <img src={avatar} alt="avatar picture"></img>
+          <p>{firstName}</p>
+          <p>{lastName}</p>
           <input type="checkbox" id="scales" name="scales"
          checked />
         </div>
