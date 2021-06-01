@@ -14,6 +14,7 @@ const ListWrapper = ({ users }) => {
            avatar={item.avatar}
            firstName={item.first_name}
            lastName={item.last_name}
+           key={item.id}
            />)
            }
 

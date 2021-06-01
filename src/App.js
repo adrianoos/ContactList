@@ -9,13 +9,11 @@ function App() {
 
   const getData = () => {
     $.getJSON('https://teacode-recruitment-challenge.s3.eu-central-1.amazonaws.com/users.json',
-    (data) => (setUsers(data)))
+    (data) => (setUsers(data.sort((a,b)=> (a.last_name.toLowerCase() > b.last_name.toLowerCase() ? 1 : -1)))))
   };
-
 
   useEffect(() => {
     getData()
-    console.log(users)
   }, [])
 
   return (
