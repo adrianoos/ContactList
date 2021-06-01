@@ -1,4 +1,5 @@
 import React from 'react'
+import ListItem from './ListItem'
 
 const ListWrapper = ({ users }) => {
 
@@ -9,6 +10,7 @@ const ListWrapper = ({ users }) => {
            <input placeholder='Filter' type='text' className='LoginInputs'></input>
            <button>Filter</button>
            </form>
+           <ListItem />
         </div>
     )
 }

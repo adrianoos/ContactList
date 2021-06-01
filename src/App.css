@@ -21,6 +21,22 @@ body {
 }
 #ListWrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+}
+
+#ListItem {
+  width: 70vw;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(70, 188, 218));
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: x-large;
+  font-family: 'Lobster', cursive;
+
 }
