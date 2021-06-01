@@ -6,8 +6,7 @@ const ListItem = ({ avatar, firstName, lastName }) => {
             <img src={avatar} alt="avatar picture"></img>
           <p>{firstName}</p>
           <p>{lastName}</p>
-          <input type="checkbox" id="scales" name="scales"
-         checked />
+
         </div>
     )
 }
@@ -16,3 +15,6 @@ export default ListItem
 
 
 // AWATAR || FIRST NAME   , LAST NAME   ,   CHECKBOX
+
+//<input type="checkbox" id="scales" name="scales"
+//checked />

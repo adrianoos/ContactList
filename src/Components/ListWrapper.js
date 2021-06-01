@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ListItem from './ListItem'
 
-const ListWrapper = ({ users }) => {
+const ListWrapper = ({ users, updateInput }) => {
 
     return (
         <div id='ListWrapper'>
            <form>
-           <input placeholder='Filter' type='text' className='LoginInputs'></input>
+           <input placeholder='Filter by First or Last name' type='text' onChange={updateInput}></input>
            <button>Filter</button>
            </form>
            { users.map((item) =>
