@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import ListItem from './ListItem'
 
-const ListWrapper = ({ users, updateInput }) => {
+const ListWrapper = ({ users, updateInput, logClicked, clickedIDs }) => {
 
     return (
         <div id='ListWrapper'>
@@ -15,6 +15,9 @@ const ListWrapper = ({ users, updateInput }) => {
            firstName={item.first_name}
            lastName={item.last_name}
            key={item.id}
+           id={item.id}
+           logClicked={logClicked}
+           clickedIDs={clickedIDs}
            />)
            }
 

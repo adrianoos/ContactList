@@ -28,15 +28,19 @@ body {
 }
 
 #ListItem {
-  width: 70vw;
+  width: 45vw;
   margin: 10px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
-  justify-content:space-around;
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(70, 188, 218));
+  justify-content:space-between;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(9, 170, 170));
   border-radius: 5px;
   border: 1px solid black;
   font-size: x-large;
   font-family: 'Lobster', cursive;
-
+  box-shadow: 5px 5px 5px rgb(141, 141, 140);
+}
+#ListItem:hover {
+  cursor: pointer;
 }
