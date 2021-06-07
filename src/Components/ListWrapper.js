@@ -20,7 +20,6 @@ const ListWrapper = ({ users, updateInput, logClicked, clickedIDs }) => {
            clickedIDs={clickedIDs}
            />)
            }
-
         </div>
     )
 }

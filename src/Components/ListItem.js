@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
-import { FaRegCheckCircle } from 'react-icons/fa'; // epmty
+import { FaRegCheckCircle } from 'react-icons/fa';
 
 const ListItem = ({ avatar, firstName, lastName, id, logClicked, clickedIDs }) => {
-
-
 
     return (
         <div id='ListItem' onClick={() => logClicked(id)}>

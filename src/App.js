@@ -17,17 +17,16 @@ function App() {
 
   const updateInput = (e) => {
     setInputValue(e.target.value)
-    console.log(inputValue)
-    console.log(users)
     setFilteredUsers(users.filter((item)=> item.first_name.toLowerCase().includes(inputValue.toLowerCase()) || item.last_name.toLowerCase().includes(inputValue.toLowerCase())))
 };
 
 const logClicked = (id) => {
-  const indexOfID = clickedIDs.indexOf(id)
   if (clickedIDs.includes(id)) {
-    setClickedIDs(clickedIDs.filter(item => item !== indexOfID))
+    let removedArray = clickedIDs.filter( el => el !== id)
+    setClickedIDs(removedArray)
+  } else {
+    setClickedIDs(prevclickedIDs => [...prevclickedIDs, id])
   }
-  setClickedIDs(prevclickedIDs => [...prevclickedIDs, id])
   console.log(clickedIDs)
   };
 
